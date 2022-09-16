@@ -7,6 +7,8 @@ header {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid black;
+    font-size: 1.8rem;
+    background-color: rgb(206, 216, 119);
    
 }
 .country {
@@ -25,41 +27,41 @@ nav, aside, main {
 }
 
 nav {
-    background-color: rgb(80, 80, 255);
-   
-}
-nav ul {
+    background-color: rgb(147, 147, 199);
     display: flex;
-    justify-content: space-around;
-    padding-inline-start: 0px;
-     
-}
-nav li {
+    justify-content: space-evenly;
     
-    list-style: none;
-    text-decoration: none;
-    padding: 0;
 }
 
-nav li a {
+nav a {
+    
+    padding-inline-start: 0px;
+    margin-top: 0;
+    padding: 6%;
+    border-bottom: 1px black solid;
+    transition: 1s;
     text-decoration: none;
     color: aliceblue;
+    flex-grow: 1;
+    text-align: center;
+
 }
-
-
 nav a:hover {
+    background-color: rgb(112, 112, 156);
     color: rgb(255, 244, 29);
 }
+
+
 nav a:visited {
     color:aliceblue
 }
 
 main {
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
 }
 
 aside {
-    background-color: darkred;
+    background-color: rgb(147, 147, 199);
 }
 
 .bilder {
@@ -89,7 +91,7 @@ aside {
 
 @media screen and ( min-width: 768px) {
     .container {
-        /* display: flex; */
+
         flex-direction: row;
         height: 100vh;
        
@@ -98,38 +100,48 @@ aside {
 
     nav {
         width: 20%;
-    }
-    nav ul {
         flex-direction: column;
+        justify-content: flex-start;     
         
     }
-    nav li {
-        padding: 10%;
+    nav a {
+        flex-grow: 0;
     }
+
     main {
         width: 60%;
+        padding-top: 1%;
+        
     }
 
     aside {
         width: 20%;
+        
     }
 
     .main-container {
-        flex-direction: row; 
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction:row; 
+        flex-wrap:wrap;
+        justify-content:space-around;
         align-items: center;
+
+              
+    
     }
   
 
     .bilder img {
-        height: 100%;
-        
-        
-        
+
+       
+       width: 100%;
+      
     }
     .bilder{
+        
+        height: auto;
         width: 40%;
-        height: 20vh;
+        
+
     }
+
 }
