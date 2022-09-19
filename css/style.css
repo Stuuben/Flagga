@@ -12,6 +12,7 @@ header {
     background-color: rgb(206, 216, 119);
     background-image: url(https://besthqwallpapers.com/Uploads/3-4-2021/160842/thumb2-4k-flag-of-usa-grunge-flags-north-american-countries-national-symbols.jpg);
     background-position: center;
+    
 
 }
 
@@ -25,6 +26,8 @@ align-items: center;
 .container {
     display: flex;
     flex-direction: column;
+    
+    
 }
 
 nav, aside, main {
@@ -99,8 +102,8 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     width: 100;
+    
     
 }
 
@@ -145,8 +148,8 @@ aside {
     .main-container {
         flex-direction:row; 
         flex-wrap:wrap;
-        justify-content:space-around;
-        align-items: center;
+        justify-content: space-around;
+        align-items:stretch;
 
               
     
