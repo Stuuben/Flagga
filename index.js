@@ -7,18 +7,18 @@ const texts = [
   "If",
   "You",
   "Like",
-  "It",
+  "FLAGGOR",
   "Please",
   "Give",
-  "a Love",
-  ":)",
-  "by @DotOnion",
+  "Love",
+  "to",
+  "FED22S",
 ];
 
-const morphTime = 1;
+const morphTime = 1.5;
 const cooldownTime = 0.25;
 
-let textIndex = texts.length - 1;
+let textIndex = texts.length - 3;
 let time = new Date();
 let morph = 0;
 let cooldown = cooldownTime;
