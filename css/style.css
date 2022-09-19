@@ -107,21 +107,27 @@ aside {
     
 }
 .title {
+    position: relative;
     color: white;
     text-shadow: 4px 4px 8px black, 0 0 25px blue, 0 0 25px darkblue;
     font-size: 250%;
-    text-transform: uppercase;
-    animation: spinn 2s infinite;
-    animation-delay: calc(.2s * var(--i));
-}
 
+}
+.title span {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    animation: spinn 2s 1;
+    animation-delay: calc(.3s * var(--i));
+}
 
 .image {
     width: 100%;
 }
 @keyframes spinn {
-    0% {transform: rotateY(360deg)}
-    80% {transform: rotateY(360deg)}
+    0%, 80% {
+        transform: rotateY(360deg)
+    }
 }
 
 @media screen and ( min-width: 768px) {
