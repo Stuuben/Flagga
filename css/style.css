@@ -106,6 +106,12 @@ aside {
     
     
 }
+.title {
+    color: white;
+    text-shadow: 4px 4px 8px black, 0 0 25px blue, 0 0 25px darkblue;
+    font-size: 250%;
+}
+
 
 .image {
     width: 100%;
