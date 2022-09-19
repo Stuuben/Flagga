@@ -12,7 +12,6 @@ header {
     background-color: rgb(206, 216, 119);
     background-image: url(https://besthqwallpapers.com/Uploads/3-4-2021/160842/thumb2-4k-flag-of-usa-grunge-flags-north-american-countries-national-symbols.jpg);
     background-position: center;
-    
 
 }
 
@@ -103,6 +102,7 @@ aside {
     flex-direction: column;
     align-items: center;
     width: 100;
+    padding-top: 3%;
     
     
 }
@@ -110,11 +110,18 @@ aside {
     color: white;
     text-shadow: 4px 4px 8px black, 0 0 25px blue, 0 0 25px darkblue;
     font-size: 250%;
+    text-transform: uppercase;
+    animation: spinn 2s infinite;
+    animation-delay: calc(.2s * var(--i));
 }
 
 
 .image {
     width: 100%;
+}
+@keyframes spinn {
+    0% {transform: rotateY(360deg)}
+    80% {transform: rotateY(360deg)}
 }
 
 @media screen and ( min-width: 768px) {
@@ -138,7 +145,7 @@ aside {
 
     main {
         width: 60%;
-        padding-top: 1%;
+        padding: 3% 0 3% 0;
         
     }
 
@@ -148,6 +155,7 @@ aside {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center; 
+        
     }
  
 
